@@ -1,36 +1,6 @@
-import { useEffect } from "react";
-
 function App() {
-  useEffect(() => {
-    // Show preloader at first
-    const preloader = document.getElementById("js-preloader");
-    if (preloader) {
-      preloader.style.display = "block";
-    }
-
-    // Hide it after a short delay (simulate loading)
-    const timer = setTimeout(() => {
-      if (preloader) {
-        preloader.style.display = "none";
-      }
-    }, 1500); // adjust time as needed (ms)
-
-    return () => clearTimeout(timer);
-  }, []);
   return (
     <>
-      {/* ***** Preloader Start ***** */}
-      <div id="js-preloader" className="js-preloader">
-        <div className="preloader-inner">
-          <span className="dot" />
-          <div className="dots">
-            <span />
-            <span />
-            <span />
-          </div>
-        </div>
-      </div>
-      {/* ***** Preloader End ***** */}
       {/* ***** Header Area Start ***** */}
       <header
         className="header-area header-sticky wow slideInDown"
