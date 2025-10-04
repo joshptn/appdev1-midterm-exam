@@ -10,7 +10,6 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -28,6 +27,5 @@
     "globals": "^16.4.0",
     "vite": "^7.1.7"
   },
-    "homepage": "https://joshptn.github.io/appdev1-midterm-exam/"
-
+  "homepage": "https://joshptn.github.io/appdev1-midterm-exam/"
 }
